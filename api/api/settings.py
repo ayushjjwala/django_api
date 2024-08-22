@@ -29,6 +29,7 @@ DEBUG = False
 ALLOWED_HOSTS = ['ec2-3-23-96-196.us-east-2.compute.amazonaws.com', 'https://799ibto505.execute-api.us-east-2.amazonaws.com', 'https://799ibto505.execute-api.us-east-2.amazonaws.com/dev']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
