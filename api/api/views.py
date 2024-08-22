@@ -7,7 +7,6 @@ def sample_api_view(request):
     }
     return JsonResponse(data)
 
-
 def get_data(request):
     data = {"message": "GET request successful!"}
     return JsonResponse(data)
