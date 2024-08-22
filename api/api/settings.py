@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-vgi!=sh=^*2hgp3oe5_q@9865l)4ox8*#voplty!31nun6m0c%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'your-elb-dns.amazonaws.com', 'your-api-gateway-id.execute-api.region.amazonaws.com']
+ALLOWED_HOSTS = ['https://799ibto505.execute-api.us-east-2.amazonaws.com']
 
 
 # Application definition
@@ -70,10 +70,9 @@ TEMPLATES = [
     },
 ]
 
-# CORS_ALLOWED_ORIGINS = [
-#     "<https://your-api-gateway-id.execute-api.region.amazonaws.com>",
-#     "<https://your-frontend-domain.com>",
-# ]
+CORS_ALLOWED_ORIGINS = [
+    "https://799ibto505.execute-api.us-east-2.amazonaws.com",
+]
 
 WSGI_APPLICATION = 'api.wsgi.application'
 
