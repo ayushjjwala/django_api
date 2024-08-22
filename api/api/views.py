@@ -6,3 +6,15 @@ def sample_api_view(request):
         'status': 'success'
     }
     return JsonResponse(data)
+
+
+def get_data(request):
+    data = {"message": "GET request successful!"}
+    return JsonResponse(data)
+
+def post_data(request):
+    if request.method == 'POST':
+        data = {"message": "POST request successful!"}
+        return JsonResponse(data)
+    else:
+        return JsonResponse({"error": "Invalid request method"}, status=400)
